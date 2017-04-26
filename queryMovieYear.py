@@ -2,6 +2,7 @@ from __future__ import print_function # Python 2/3 compatibility
 import boto3
 import json
 import decimal
+from boto3.dynamodb.conditions import Key, Attr
 
 # Helper class to convert a DynamoDB item to JSON.
 class DecimalEncoder(json.JSONEncoder):
@@ -17,23 +18,12 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1', endpoint_url="htt
 
 table = dynamodb.Table('Movies')
 
-title = "The Big New Movie"
-year = 2015
+print("Movies from 1985")
 
-response = table.update_item(
-    Key={
-        'year': year,
-        'title': title
-    },
-    UpdateExpression="set info.rating = :r, info.plot=:p, info.actors=:a",
-    ExpressionAttributeValues={
-        ':r': decimal.Decimal(5.5),
-        ':p': "Everything happens all at once.",
-        ':a': ["Larry", "Moe", "Curly"]
-    },
-    ReturnValues="UPDATED_NEW"
+response = table.query(
+    KeyConditionExpression=Key('year').eq(1985)
 )
 
-print("UpdateItem succeeded:")
-print(json.dumps(response, indent=4, cls=DecimalEncoder))
+for i in response['Items']:
+    print(i['year'], ":", i['title'])
 
