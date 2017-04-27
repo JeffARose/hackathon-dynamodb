@@ -6,24 +6,24 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 
 table = dynamodb.create_table(
-    TableName='Movies',
+    TableName='activities',
     KeySchema=[
         {
-            'AttributeName': 'year',
+            'AttributeName': 'id',
             'KeyType': 'HASH'  #Partition key
         },
         {
-            'AttributeName': 'title',
+            'AttributeName': 'targetdate',
             'KeyType': 'RANGE'  #Sort key
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'year',
+            'AttributeName': 'id',
             'AttributeType': 'N'
         },
         {
-            'AttributeName': 'title',
+            'AttributeName': 'targetdate',
             'AttributeType': 'S'
         },
 

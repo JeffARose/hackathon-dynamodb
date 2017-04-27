@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "targetdate": "2017-05-27",
+        "userid": "1",
+        "type": "TotalOpenActivities",
+        "count": "20"
+    },
+    {
+        "id": "2",
+        "targetdate": "2017-05-27",
+        "userid": "1",
+        "type": "FactFinding",
+        "count": "20"
+    },
+    {
+        "id": "3",
+        "targetdate": "2017-05-27",
+        "userid": "1",
+        "type": "QS",
+        "count": "20"
+    },
+    {
+        "id": "4",
+        "targetdate": "2017-05-27",
+        "userid": "1",
+        "type": "Meals",
+        "count": "20"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "userid": "1",
+        "last_name": "Weston",
+        "first_name": "Norm",
+        "account_type": "standard",
+        "fr_number": "12345",
+        "address1": "1234 northwestern mutual way",
+        "city": "Franklin",
+        "state": "WI",
+        "zip": "53132"
+    }
+]
