@@ -12,9 +12,9 @@ with open("files/goaldata.json") as json_file:
     goals = json.load(json_file, parse_float = decimal.Decimal)
     for goal in goals:
         goalname = goal['goalname']
-	userid = int(goal['userid'])
-        target = int(goal['target'])
-        actual = int(goal['actual'])
+        userid = goal['userid']
+        target = goal['target']
+        actual = goal['actual']
 
         print("Adding goal:", goalname, userid)
 
@@ -26,4 +26,3 @@ with open("files/goaldata.json") as json_file:
                'actual': actual
             }
         )
-

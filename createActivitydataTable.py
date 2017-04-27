@@ -6,24 +6,24 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 
 table = dynamodb.create_table(
-    TableName='activities',
+    TableName='activitydata',
     KeySchema=[
         {
-            'AttributeName': 'id',
+            'AttributeName': 'activity_id',
             'KeyType': 'HASH'  #Partition key
         },
         {
-            'AttributeName': 'targetdate',
+            'AttributeName': 'userid',
             'KeyType': 'RANGE'  #Sort key
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'id',
+            'AttributeName': 'activity_id',
             'AttributeType': 'S'
         },
         {
-            'AttributeName': 'targetdate',
+            'AttributeName': 'userid',
             'AttributeType': 'S'
         },
 

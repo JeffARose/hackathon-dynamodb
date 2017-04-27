@@ -12,7 +12,7 @@ with open("files/prefdata.json") as json_file:
     prefs = json.load(json_file, parse_float = decimal.Decimal)
     for pref in prefs:
         name = pref['name']
-	userid = int(pref['userid'])
+        userid = pref['userid']
         pref_value = pref['pref_value']
 
         print("Adding pref:", name, userid)
@@ -24,4 +24,3 @@ with open("files/prefdata.json") as json_file:
                'pref_value': pref_value
             }
         )
-

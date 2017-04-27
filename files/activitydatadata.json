@@ -1,0 +1,32 @@
+[
+    {
+        "activity_id": "1",
+        "userid": "1",
+        "type": "Appointment",
+        "subject": "Walk through fact finder",
+        "regarding": "Vince Lombardi Jr.",
+        "start_date": "2017-04-27",
+        "due_date": "2017-05-27",
+        "segment": "A+"
+    },
+    {
+        "activity_id": "2",
+        "userid": "1",
+        "type": "Appointment",
+        "subject": "New market opportunities",
+        "regarding": "Donald Trump",
+        "start_date": "2017-04-27",
+        "due_date": "2017-05-27",
+        "segment": "A"
+    },
+    {
+        "activity_id": "3",
+        "userid": "1",
+        "type": "Appointment",
+        "subject": "Happy Birthday Lunch",
+        "regarding": "Big Bird",
+        "start_date": "2017-04-27",
+        "due_date": "2017-05-12",
+        "segment": "B"
+    }
+]

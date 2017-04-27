@@ -24,7 +24,7 @@ table = dynamodb.create_table(
         },
         {
             'AttributeName': 'userid',
-            'AttributeType': 'N'
+            'AttributeType': 'S'
         },
 
     ],
@@ -35,4 +35,3 @@ table = dynamodb.create_table(
 )
 
 print("Table status:", table.table_status)
-
