@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "goal_name": "factfinder",
+        "message": "I see you are licensed to sell D I. Did you know about our new D I series? Ask your D I clients if they are interested in any of our new products."
+    },
+    {
+        "id": "2",
+        "goal_name": "factfinder",
+        "message": "Do you have a client that has recently had a life event? Life events are great opportunities to revisit fact finder with a client."
+    },
+    {
+        "id": "3",
+        "goal_name": "factfinder",
+        "message": "Contact clients annually to see if there are changes to their financial needs."
+    },
+    {
+        "id": "4",
+        "goal_name": "daily",
+        "message": "Ask the clients you meet for a referral. Referred leads help start the conversation."
+    },
+    {
+        "id": "5",
+        "goal_name": "daily",
+        "message": "Attend community events. Good networking skills are essential for building your pipeline."
+    },
+    {
+        "id": "6",
+        "goal_name": "daily",
+        "message": "Make a habit of documenting every lead you collect in CRM.  This habit will pay off and help you meet this goal."
+    },
+    {
+        "id": "7",
+        "goal_name": "meals",
+        "message": "Share your favorite restaurant in your next appointment to learn what your clients favorites are and document it in CRM."
+    },
+    {
+        "id": "8",
+        "goal_name": "meals",
+        "message": "Use your birthday activity as an opportunity to schedule a lunch with a client."
+    },
+    {
+        "id": "9",
+        "goal_name": "meals",
+        "message": "Avoid noisy locations when scheduling lunches. This is your opportunity to listen to the clients financial needs."
+    }
+]

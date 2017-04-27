@@ -13,6 +13,7 @@ with open("files/goaldata.json") as json_file:
     for goal in goals:
         goalname = goal['goalname']
         userid = goal['userid']
+        description = goal['description']
         target = goal['target']
         actual = goal['actual']
 
@@ -22,6 +23,7 @@ with open("files/goaldata.json") as json_file:
            Item={
                'goalname': goalname,
                'userid': userid,
+               'description': description,
                'target': target,
                'actual': actual
             }
